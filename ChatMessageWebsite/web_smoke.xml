@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Website Automation" parallel="false">
+	<listeners>
+		<listener
+			class-name="com.gupshup.lib.GupshupCustomReportListener" />
+		<listener
+			class-name="com.gupshup.lib.GupshupCustomTestListener" />
+	</listeners>
+	<test name="Tab Verification">
+		<groups>
+			<run>
+				<include name="smoke" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.gupshup.ent.website.Setup" />
+			<class name="com.gupshup.ent.website.ChatMessaging" />
+		</classes>
+	</test>
+</suite>
